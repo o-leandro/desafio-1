@@ -95,7 +95,6 @@ label::before {
 
 section {
     margin: 100px 0;
-   
 }
 
 article {
@@ -143,16 +142,33 @@ article:nth-child(1n) {
     }
 
     .titulo {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .materia {
-        font-size: 14px;
+        font-size: 16px;
         width: 95%;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
+    input {
+        height: 40px;
+        padding-left: 38px;
+    }
+    
+    input::placeholder {
+        font-size: 14px;
+    }
+    
+    label::before {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        background-size: contain;
+        margin: 12px 13px 10px 10px;
+    }
+
     section {
         margin: 50px 0;
     }
@@ -174,10 +190,12 @@ article:nth-child(1n) {
     }
 
     .titulo {
+        font-size: 18px;
         margin: 0 16px 9px 16px;
     }
 
     .materia {
+        font-size: 14px;
         margin: 0;
         padding: 0 12px 15px 17px;
         width: 100%;
